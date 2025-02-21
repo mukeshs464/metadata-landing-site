@@ -1,25 +1,48 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import FeatureSection from "./components/FeatureSection";
-import Workflow from "./components/Workflow";
+import Home from "./pages/Home";
+import FeatureSection from "./pages/FeatureSection";
+import Workflow from "./pages/Workflow";
 import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
+import { AboutUs } from "./pages/AboutUs";
+import { Team } from "./pages/Team";
+import Team1 from "./pages/Team1";
+import TeamDetails from "./pages/TeamDetails";
+import StudentDetails from "./pages/FacultyContributors";
+import FacultyDetails from "./pages/StudentContributors";
+import IndustryExpertDetails from "./pages/IndustryContributors";
+
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
+      {/* Navbar inside BrowserRouter */}
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
-        <FeatureSection />
-        <Workflow />
-        <Pricing />
-        <Testimonials />
-        <Footer />
+      <div className="max-w-7xl mx-auto pt-5 px-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="feature" element={<FeatureSection />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="workflow" element={<Workflow />} />
+          <Route path="team" element={<Team />} />
+          <Route path="/team-details/:category" element={<TeamDetails />} />
+
+
+
+          {/* <Route path="/team-details/students/:id" element={<StudentDetails />} />
+          <Route path="/team-details/faculty/:id" element={<FacultyDetails />} />
+          <Route path="/team-details/industry/:id" element={<IndustryExpertDetails />} /> */}
+
+          <Route path="team1" element={<Team1 />} />
+        </Routes>
       </div>
-    </>
+      <Footer />
+    </BrowserRouter>
   );
 };
 
 export default App;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
