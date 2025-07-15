@@ -19,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       {/* Navbar inside BrowserRouter */}
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-5 px-6">
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="feature" element={<FeatureSection />} />
@@ -36,7 +36,7 @@ const App = () => {
 
           <Route path="team1" element={<Team1 />} />
         </Routes>
-      </div>
+
       <Footer />
     </BrowserRouter>
   );

@@ -357,12 +357,12 @@ export const industrial_contributors = [
   {
     id: 1,
     name: "Chetan",
-    photo: null,
+    photo: Senthil_Kumar_T,
   },
   {
     id: 2,
     name: "Rajesh J",
-    photo: null,
+    photo: Senthil_Kumar_T,
   },
 ];
 

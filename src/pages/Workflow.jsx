@@ -1,35 +1,73 @@
 import { CheckCircle2 } from "lucide-react";
-import codeImg from "../assets/code.jpg";
 import { checklistItems } from "../constants";
+import { motion } from "framer-motion"; // For animations
 
 const Workflow = () => {
   return (
-    <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
-        Dynamically tuned{" "}
-        <span className="bg-gradient-to-r from-blue-500 to-indigo-800 text-transparent bg-clip-text">
-          ML models.
-        </span>
-      </h2>
-      <div className="flex flex-wrap justify-center">
-        <div className="p-2 w-full lg:w-1/2">
-          <img src={codeImg} alt="Coding" />
-        </div>
-        <div className="pt-12 w-full lg:w-1/2">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            Our <span className="text-teal-600">Workflow</span> Process
+          </h2>
+          <p className="mt-3 text-lg text-gray-500">
+            Optimized with ML-driven precision
+          </p>
+        </motion.div>
+
+        {/* Timeline Layout */}
+        <div className="relative">
+          {/* Vertical Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-teal-200 h-full"></div>
+
           {checklistItems.map((item, index) => (
-            <div key={index} className="flex mb-12">
-              <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
-                <CheckCircle2 />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.3 }}
+              className={`relative mb-12 flex ${
+                index % 2 === 0 ? "justify-start" : "justify-end"
+              }`}
+            >
+              {/* Card */}
+              <div
+                className={`w-full md:w-5/12 bg-gray-50 rounded-xl shadow-lg p-6 border-l-4 ${
+                  index % 2 === 0 ? "border-teal-500" : "border-purple-500"
+                }`}
+              >
+                <div className="flex items-start space-x-3">
+                  <CheckCircle2
+                    className={`w-6 h-6 ${
+                      index % 2 === 0 ? "text-teal-500" : "text-purple-500"
+                    }`}
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1 text-gray-600">{item.description}</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h5 className="mt-1 mb-2 text-xl">{item.title}</h5>
-                <p className="text-md text-neutral-500">{item.description}</p>
-              </div>
-            </div>
+
+              {/* Timeline Dot */}
+              <div
+                className={`absolute left-1/2 transform -translate-x-1/2 -translate-y-2 w-4 h-4 rounded-full ${
+                  index % 2 === 0 ? "bg-teal-500" : "bg-purple-500"
+                }`}
+              ></div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
