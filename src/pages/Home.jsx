@@ -23,8 +23,8 @@ const Home = () => {
       <FeatureSection />
       <AboutUs />
       <Workflow />
-      <Team />
       <Team1 />
+      <Team />
       <Testimonials />
       {/* <Architecture /> */}
     </>
