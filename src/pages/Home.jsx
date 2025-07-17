@@ -20,13 +20,19 @@ const Home = () => {
   return (
     <>
       <HomeContent />
-      <FeatureSection />
+      <div className="px-6 mx-auto max-w-7xl">
+        <FeatureSection />
+      </div>
       <AboutUs />
-      <Workflow />
-      <Team1 />
+      <div className="px-6 mx-auto max-w-7xl">
+        <Workflow />
+        <Team1 />
+      </div>
       <Team />
-      <Testimonials />
-      {/* <Architecture /> */}
+      <div className="px-6 mx-auto max-w-7xl">
+        <Testimonials />
+        {/* <Architecture /> */}
+      </div>
     </>
   );
 };
@@ -76,10 +82,10 @@ const HomeContent = () => {
   return (
     <section
       id="Home"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden bg-gray-900"
+      className="relative flex flex-col items-center justify-center text-center overflow-hidden bg-gray-900 pt-10 pb-20 px-4"
     >
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800 -z-10"></div>
       
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden">
@@ -209,7 +215,7 @@ const HomeContent = () => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
         >
           <motion.button
             className="group px-8 py-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
@@ -225,15 +231,6 @@ const HomeContent = () => {
           </motion.button>
           
           <motion.button
-            className="group px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-gray-100 text-lg font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <TrendingUp size={20} />
-            View Demo
-          </motion.button>
-          
-          <motion.button
             className="group px-8 py-4 rounded-full bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm border border-purple-400/50 text-purple-200 text-lg font-semibold hover:from-purple-600/40 hover:to-pink-600/40 transition-all duration-300 flex items-center gap-2"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
@@ -246,7 +243,7 @@ const HomeContent = () => {
         {/* Features Preview */}
         <motion.div
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16"
         >
           <motion.div
             className="group p-6 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-400/40 backdrop-blur-sm hover:from-blue-600/30 hover:to-indigo-600/30 transition-all duration-300"
