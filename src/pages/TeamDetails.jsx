@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, Info } from "lucide-react";
 import {
@@ -13,20 +14,6 @@ import {
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import UnivSection from "../components/custom/univ";
 
-const dummyDetails = {
-  "John Doe": {
-    bio: "A passionate ML enthusiast and open-source contributor. Worked on 3+ projects in collaboration with startups.",
-    contact: "john.doe@example.com",
-  },
-  "Jane Smith": {
-    bio: "Assistant Professor in AI with 10+ years of teaching experience and 15+ published papers.",
-    contact: "jane.smith@example.com",
-  },
-  "Alan Green": {
-    bio: "Senior Engineer at TechCorp, leading industrial automation systems.",
-    contact: "alan.green@techcorp.com",
-  },
-};
 
 const TeamDetails = () => {
   const { category } = useParams();
@@ -50,8 +37,12 @@ const TeamDetails = () => {
 
   const type = formattedCategory;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen py-20 px-4 sm:px-8 relative">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen py-4 px-4 sm:px-8 relative">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
@@ -60,8 +51,10 @@ const TeamDetails = () => {
         <ArrowLeft size={20} />
       </button>
 
+      {type === "Faculty" ? (<UnivSection />) : (<></>)}
+
       {/* Heading */}
-      <div className="max-w-5xl mx-auto text-center mb-12">
+      <div className="max-w-5xl mx-auto text-center mb-12 mt-4">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight">
           {formattedCategory} Contributors
         </h1>
@@ -90,12 +83,11 @@ const TeamDetails = () => {
                   <p className="text-sm text-gray-600">{item.degree}</p>
                 )}
 
-                {/* Popover for Details */}
                 <div className="absolute top-3 right-3">
                   <Popover>
                     <PopoverTrigger asChild>
                       <button
-                        className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-white transition"
+                        className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-300 transition"
                         aria-label="More Info"
                       >
                         <Info size={18} />
@@ -106,25 +98,25 @@ const TeamDetails = () => {
                         {item.name}
                       </h4>
                       <p className="text-sm text-gray-600 mb-2">
-                        {dummyDetails[item.name]?.bio ||
+                        {item?.bio ||
                           "No additional info available."}
                       </p>
                       <p className="text-sm text-gray-500 italic">
-                        Contact: {dummyDetails[item.name]?.contact || "N/A"}
+                        Contact: {item?.contact || "N/A"}
                       </p>
                     </PopoverContent>
                   </Popover>
                 </div>
               </div>
-          ))) : (<AnimatedTooltip items={selectedContributors} />)
+          ))) : (
+            <AnimatedTooltip items={selectedContributors} />
+          )
         ) : (
           <p className="text-center text-gray-600 col-span-full">
             No contributors found.
           </p>
         )}
       </div>
-
-      <UnivSection />
     </div>
   );
 };

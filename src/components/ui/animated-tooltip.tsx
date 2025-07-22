@@ -110,7 +110,7 @@ export const AnimatedTooltip = ({
                 <Popover>
                 <PopoverTrigger asChild>
                     <button
-                    className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-white transition"
+                    className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-400 transition"
                     aria-label="More Info"
                     >
                     <Info size={18} />
