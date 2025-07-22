@@ -145,39 +145,39 @@ export const testimonials = [
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Generalization",
+    text: "Generalization That Holds Up",
     description:
-      "The data is not identical to the training set.",
+      "Models that don’t just memorize your data — they adapt to the unseen. Great for real-world deployment.",
   },
   {
     icon: <Fingerprint />,
-    text: "Accuracy and Performance Metrics",
+    text: "Metrics That Matter",
     description:
-      "Performance metrics give insights into how well the model is performing, not just overall but in specific aspects like handling imbalanced data.",
+      "Go beyond accuracy. Understand model behavior across classes, thresholds, and imbalance.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Scalability",
+    text: "Scale Without Stress",
     description:
-      "Scalable models are important in big data applications where the volume of data may grow substantially.",
+      "Whether it’s 10 rows or 10 million, Meta handles your data with performance-first architecture.",
   },
   {
     icon: <BatteryCharging />,
-    text: "Interpretability",
+    text: "Built-In Interpretability",
     description:
-      "Interpretability is crucial in fields like healthcare and finance, where understanding the decision process of the model is important for trust and regulatory reasons.",
+      "Use SHAP, LIME, and visual insights to understand why your model predicts what it does — crucial for healthcare, finance, and regulated domains.",
   },
   {
     icon: <AudioLines />,
-    text: "Flexibility and Applicability",
+    text: "Flexible, Modular Workflows",
     description:
-      "Flexible models can be adapted for different tasks, making them more versatile.",
+      "Use Meta for classification today, regression tomorrow, and clustering next week — all without context switching",
   },
   {
     icon: <GlobeLock />,
-    text: "Feature Importance and Selection",
+    text: "Know What Moves the Needle",
     description:
-      "Understanding the contribution of different features can lead to better models and reduce dimensionality.",
+      "Identify which features drive performance. Use that to optimize data, reduce noise, and make smarter decisions.",
   },
 ];
 
@@ -357,12 +357,12 @@ export const industrial_contributors = [
   {
     id: 1,
     name: "Chetan",
-    photo: null,
+    photo: Senthil_Kumar_T,
   },
   {
     id: 2,
     name: "Rajesh J",
-    photo: null,
+    photo: Senthil_Kumar_T,
   },
 ];
 
