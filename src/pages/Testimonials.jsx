@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
 import { testimonials } from "../constants";
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Pause, Play } from 'lucide-react';
 
 const Testimonials = () => {
-  // Card animation variants
-  const cardVariants = {
-    initial: { opacity: 0, y: 30, rotateX: 10 },
-    animate: { opacity: 1, y: 0, rotateX: 0 },
-    hover: { scale: 1.05, rotateX: 5, boxShadow: "0 0 12px rgba(45, 212, 191, 0.3)" },
+  const [isPaused, setIsPaused] = useState(false);
+
+  const togglePause = () => {
+    setIsPaused(!isPaused);
   };
 
   return (
@@ -58,43 +59,50 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              variants={cardVariants}
-              initial="initial"
-              animate="animate"
-              whileHover="hover"
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md border border-teal-200/30 hover:border-teal-400/50 transition-all duration-300"
-            >
-              <div className="flex flex-col">
-                <div className="flex items-start mb-4">
-                  
-                  <p className="text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed">
-                    {testimonial.text}
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <img
-                    className="w-10 h-10 mr-4 rounded-full border border-teal-400/30"
-                    src={testimonial.image || "/path/to/default-image.jpg"}
-                    alt={testimonial.user}
-                  />
-                  <div>
-                    <h6 className="text-base font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
-                      {testimonial.user}
-                    </h6>
-                    <span className="text-xs font-normal italic text-gray-500">
-                      {testimonial.company}
-                    </span>
+        {/* Testimonials Carousel */}
+        <div className="relative">
+          <Carousel 
+            indicators={false} 
+            controls={true}
+            interval={isPaused ? null : 2000} // This is the fix
+            pause={false} // We handle pause with the button
+          >
+            {testimonials.map((testimonial, i) => (
+              <Carousel.Item key={i}>
+                <div className="flex justify-center items-center" style={{ minHeight: '250px' }}>
+                  <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-sm shadow-md border border-teal-200/30 hover:border-teal-400/50 transition-all duration-300 max-w-lg">
+                    <div className="flex flex-col">
+                      <div className="flex items-start mb-4">
+                        <p className="text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed">
+                          "{testimonial.text}"
+                        </p>
+                      </div>
+                      <div className="flex items-center">
+                        <img
+                          className="w-10 h-10 mr-4 rounded-full border border-teal-400/30"
+                          src={testimonial.image}
+                          alt={testimonial.user}
+                        />
+                        <div>
+                          <h6 className="text-base font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
+                            {testimonial.user}
+                          </h6>
+                          <span className="text-xs font-normal italic text-gray-500">
+                            {testimonial.company}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          <div className="absolute bottom-4 right-4 z-20">
+            <button onClick={togglePause} className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors">
+              {isPaused ? <Play size={20} /> : <Pause size={20} />}
+            </button>
+          </div>
         </div>
       </div>
     </section>
