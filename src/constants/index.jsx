@@ -325,30 +325,35 @@ export const faculty_contributors = [
     id: 1,
     name: "Dr. Selvanayaki Kolandapalayam Shanmugam",
     photo: Selvanayaki_Kolandapalayam_Shanmugam,
+    quote: "Be Confident and Trust yourself",
     link: "https://www.ashland.edu/faculty/selvanayaki-kolandapalayam-shanmugam-phd",
   },
   {
     id: 2,
     name: "Dr. Ajibesin A. Abel",
     photo: Ajibesin_A_Abel,
+    quote: "Be Confident and Trust yourself",
     link: "https://drajibesin.com/",
   },
   {
     id: 3,
     name: "Dr. Senthil Kumar T. ",
     photo: Senthil_Kumar_T,
+    quote: "Be Confident and Trust yourself",
     link: "https://www.amrita.edu/faculty/t-senthilkumar/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Dr. G Naveen Sundar ",
     photo: null,
+    quote: "Be Confident and Trust yourself",
     link: "https://www.karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr%20Naveen.pdf",
   },
   {
-    id:4,
+    id:5,
     name: "Dr. D. Narmadha",
     photo: null,
+    quote: "Be Confident and Trust yourself",
     link: "https://karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr.%20Narmadha.pdf"
   }
 ];
