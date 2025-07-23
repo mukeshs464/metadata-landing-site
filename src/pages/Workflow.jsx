@@ -49,6 +49,7 @@ const Workflow = () => {
 
   return (
     <section 
+      id="workflow"
       ref={ref}
       className="py-0 px-2 sm:px-6 lg:px-8 md:py-0 bg-transparent min-h-screen flex items-center"
       role="region"
@@ -184,7 +185,7 @@ const Workflow = () => {
               animate={isInView ? "visible" : "hidden"}
               className="w-full relative"
             >
-              <div className={`grid grid-cols-${checklistItems.length} gap-0 relative`}>
+              <div className={`grid grid-cols-4 gap-0 relative`}>
                 {checklistItems.map((item, index) => {
                   const isTop = index % 2 === 0;
                   

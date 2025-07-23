@@ -11,7 +11,7 @@ import {
 
 export const AboutUs = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="about-us" className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 z-0">
         <motion.div

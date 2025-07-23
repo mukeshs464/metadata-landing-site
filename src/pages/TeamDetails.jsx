@@ -7,6 +7,13 @@ import {
   PopoverContent,
 } from "../components/ui/popover";
 import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card"
+import {
   student_contributors,
   faculty_contributors,
   industrial_contributors,
@@ -62,13 +69,13 @@ const TeamDetails = () => {
       </div>
 
       {/* Contributors Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      {/* <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {selectedContributors.length > 0 ? (
           type != "Faculty" ? 
             (selectedContributors.map((item, idx) => (
               <div
                 key={idx}
-                className="relative bg-white/70 backdrop-blur-md border border-gray-200 rounded-xl shadow-md p-5 hover:shadow-xl transition-all group overflow-hidden"
+                className="relative min-h- bg-white/70 backdrop-blur-md border border-gray-200 rounded-xl shadow-md p-5 hover:shadow-xl transition-all group overflow-hidden"
               >
                 <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
                   <img
@@ -116,7 +123,66 @@ const TeamDetails = () => {
             No contributors found.
           </p>
         )}
+      </div> */}
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-stretch">
+        {selectedContributors.length > 0 ? (
+          type !== "Faculty" ? (
+            selectedContributors.map((item, idx) => (
+              <Card
+                key={idx}
+                className="relative w-full h-full flex flex-col justify-between bg-white/70 backdrop-blur-md border border-gray-200 shadow-md hover:shadow-xl transition-all group overflow-hidden"
+              >
+                {/* Popover Trigger as CardAction (top-right corner) */}
+                <div className="absolute top-3 right-3 z-10">
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <button
+                        className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-300 transition"
+                        aria-label="More Info"
+                      >
+                        <Info size={18} />
+                      </button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-72 shadow-lg rounded-lg p-4 bg-white">
+                      <h4 className="font-semibold text-md mb-1">{item.name}</h4>
+                      <p className="text-sm text-gray-600 mb-2">
+                        {item?.bio || "No additional info available."}
+                      </p>
+                      <p className="text-sm text-gray-500 italic">
+                        Contact: {item?.contact || "N/A"}
+                      </p>
+                    </PopoverContent>
+                  </Popover>
+                </div>
+
+                <CardHeader className="p-4">
+                  <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
+                    <img
+                      src={item.photo || "/placeholder.jpg"}
+                      alt={item.name}
+                      className="object-cover h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <CardTitle className="text-lg text-gray-800">{item.name}</CardTitle>
+                  {category === "student-team" && item.degree && (
+                    <CardDescription className="text-sm text-gray-600">
+                      {item.degree}
+                    </CardDescription>
+                  )}
+                </CardHeader>
+              </Card>
+            ))
+          ) : (
+            <AnimatedTooltip items={selectedContributors} />
+          )
+        ) : (
+          <p className="text-center text-gray-600 col-span-full">
+            No contributors found.
+          </p>
+        )}
       </div>
+
     </div>
   );
 };

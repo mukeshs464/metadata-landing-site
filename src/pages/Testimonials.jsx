@@ -13,7 +13,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
+    <section id="testimonials" className="relative py-20 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
       {/* Motion Background Elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div

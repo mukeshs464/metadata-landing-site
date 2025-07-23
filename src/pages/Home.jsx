@@ -20,13 +20,13 @@ const Home = () => {
   return (
     <>
       <HomeContent />
+      <AboutUs />
       <div className="px-6 mx-auto max-w-7xl">
         <FeatureSection />
       </div>
-      <AboutUs />
       <div className="px-6 mx-auto max-w-7xl">
         <Workflow />
-        <Team1 />
+        {/* <Team1 /> */}
       </div>
       <Team />
       <Team1 />
@@ -80,7 +80,7 @@ const HomeContent = () => {
 
   return (
     <section
-      id="Home"
+      id="home"
       className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden bg-gray-900"
     >
       {/* Background Elements */}

@@ -16,12 +16,13 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Features", href: "/feature" },
-  { label: "AboutUs", href: "/about-us" },
-  { label: "Workflow", href: "/workflow" },
-  { label: "Team", href: "/team" },
-  { label: "Test", href: "/team1" }
+  { label: "Home", href: "home" },
+  { label: "AboutUs", href: "about-us" },
+  { label: "Features", href: "features" },
+  { label: "Workflow", href: "workflow" },
+  { label: "Teams", href: "teams" },
+  { label: "Architecture", href: "architecture" },
+  { label: "Testimonials", href: "testimonials" }
 ];
 
 import student_logo from "../assets/student_logo.jpg";

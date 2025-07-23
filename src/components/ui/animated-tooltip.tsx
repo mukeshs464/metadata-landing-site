@@ -14,6 +14,7 @@ import {
   PopoverContent,
 } from "./popover";
 import { Info } from "lucide-react";
+import { Card, CardDescription, CardHeader, CardTitle } from "./card";
 
 export const AnimatedTooltip = ({
   items,
@@ -92,45 +93,44 @@ export const AnimatedTooltip = ({
             alt={item.name}
             className="relative !m-0 h-14 w-14 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
           /> */}
-          <div
+          <Card
             key={idx}
-            className="relative bg-white/70 backdrop-blur-md border border-gray-200 rounded-xl shadow-md p-5 hover:shadow-xl group overflow-hidden object-cover object-top transition duration-500 group-hover:z-30 group-hover:scale-105"
-            >
-            <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
-                <img
-                src={item.photo || "/placeholder.jpg"}
-                alt={item.name}
-                className="object-cover h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
-                />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
-
-            {/* Popover for Details */}
-            <div className="absolute top-3 right-3">
-                <Popover>
+            className="relative w-full h-full flex flex-col justify-between bg-white/70 backdrop-blur-md border border-gray-200 shadow-md hover:shadow-xl transition-all group overflow-hidden"
+          >
+            {/* Popover Trigger as CardAction (top-right corner) */}
+            <div className="absolute top-3 right-3 z-10">
+              <Popover>
                 <PopoverTrigger asChild>
-                    <button
-                    className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-400 transition"
+                  <button
+                    className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-300 transition"
                     aria-label="More Info"
-                    >
+                  >
                     <Info size={18} />
-                    </button>
+                  </button>
                 </PopoverTrigger>
                 <PopoverContent className="w-72 shadow-lg rounded-lg p-4 bg-white">
-                    <h4 className="font-semibold text-md mb-1">
-                    {item.name}
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-2">
-                    {item?.bio ||
-                        "No additional info available."}
-                    </p>
-                    <p className="text-sm text-gray-500 italic">
+                  <h4 className="font-semibold text-md mb-1">{item.name}</h4>
+                  <p className="text-sm text-gray-600 mb-2">
+                    {item?.bio || "No additional info available."}
+                  </p>
+                  <p className="text-sm text-gray-500 italic">
                     Contact: {item?.contact || "N/A"}
-                    </p>
+                  </p>
                 </PopoverContent>
-                </Popover>
+              </Popover>
             </div>
-            </div>
+
+            <CardHeader className="p-4">
+              <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
+                <img
+                  src={item.photo || "/placeholder.jpg"}
+                  alt={item.name}
+                  className="object-cover h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <CardTitle className="text-lg text-gray-800">{item.name}</CardTitle>
+            </CardHeader>
+          </Card>
         </div>
       ))}
     </>
