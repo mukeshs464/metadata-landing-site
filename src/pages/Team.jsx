@@ -11,7 +11,7 @@ export const Team = () => {
     {
       id: 1,
       title: "Industrial Team",
-      cover: "/single-page-app/images/industrial-cover.jpg",
+      cover: "industrial team.jpg",
       lessons: "Industry Solutions",
       members: "Industry Experts",
       profileImg: "/single-page-app/images/industrial-profile.png"
@@ -19,7 +19,7 @@ export const Team = () => {
     {
       id: 2,
       title: "Faculty Team",
-      cover: "/single-page-app/images/faculty-cover.jpg",
+      cover: "faculty team.jpg",
       lessons: "Academic Excellence",
       members: "Faculty Members",
       profileImg: "/single-page-app/images/faculty-profile.png"
@@ -27,7 +27,7 @@ export const Team = () => {
     {
       id: 3,
       title: "Student Team",
-      cover: "/single-page-app/images/student-cover.jpg",
+      cover: "students team.jpg",
       lessons: "Innovation Hub",
       members: "Student Leaders",
       profileImg: "/single-page-app/images/student-profile.png"
@@ -64,6 +64,7 @@ export const Team = () => {
   };
 
   return (
+    
     <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 z-0">
@@ -311,5 +312,6 @@ export const Team = () => {
         </motion.div>
       </div>
     </section>
+    
   );
 };
