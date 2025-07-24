@@ -149,25 +149,14 @@ const HomeContent = () => {
         initial="hidden"
         animate="visible"
       >
-        {/* Badge */}
-        <motion.div
-          variants={itemVariants}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/20 to-indigo-600/20 border border-blue-400/40 backdrop-blur-sm mb-8"
-        >
-          <Sparkles size={16} className="text-blue-300" />
-          <span className="text-sm font-medium text-gray-200">
-            Trusted by {activeUsers}+ developers worldwide
-          </span>
-        </motion.div>
-
         {/* Main Heading */}
         <motion.h1
           variants={itemVariants}
-          className="text-3xl sm:text-6xl lg:text-5xl font-bold text-center tracking-tight mb-8"
+          className="text-3xl sm:text-6xl lg:text-4xl font-bold text-center tracking-tight mb-8"
         >
           <span className="block text-gray-100">Train,Predict,Deliver</span>
-          <span className="block mt-3 text-4xl sm:text-6xl lg:text-7xl bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 text-transparent bg-clip-text">
-            All in One ML Platform
+          <span className="block mt-3 text-4xl sm:text-6xl lg:text-5xl bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 text-transparent bg-clip-text">
+            The Ultimate No-Code Platform
           </span>
         </motion.h1>
 
@@ -275,45 +264,13 @@ const HomeContent = () => {
         </motion.div>
 
         {/* Launch Notice */}
-<motion.p
- variants={itemVariants}
- className="text-sm sm:text-base text-gray-400 text-center px-4 mb-16 max-w-lg mx-auto leading-relaxed"
->
- <span className="text-blue-300 font-semibold">Meta data  goes live soon.</span>{" "}
- Sign up to stay in the loop and get priority access when we launch.
-</motion.p>
-
-
-
-        {/* Features Preview */}
-        <motion.div
+        <motion.p
           variants={itemVariants}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+          className="text-sm sm:text-base text-gray-400 text-center px-4 mb-16 max-w-lg mx-auto leading-relaxed"
         >
-          <motion.div
-            className="group p-6 rounded-2xl bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-400/40 backdrop-blur-sm hover:from-blue-600/30 hover:to-indigo-600/30 transition-all duration-300"
-            whileHover={{ y: -5 }}
-          >
-            <h3 className="text-lg font-semibold text-gray-100 mb-2">Smart Algorithms</h3>
-            <p className="text-gray-300 text-sm">Pre-trained models ready to use</p>
-          </motion.div>
-          
-          <motion.div
-            className="group p-6 rounded-2xl bg-gradient-to-br from-indigo-600/20 to-purple-600/20 border border-indigo-400/40 backdrop-blur-sm hover:from-indigo-600/30 hover:to-purple-600/30 transition-all duration-300"
-            whileHover={{ y: -5 }}
-          >
-            <h3 className="text-lg font-semibold text-gray-100 mb-2">Lightning Fast</h3>
-            <p className="text-gray-300 text-sm">Deploy in minutes, not hours</p>
-          </motion.div>
-          
-          <motion.div
-            className="group p-6 rounded-2xl bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-400/40 backdrop-blur-sm hover:from-purple-600/30 hover:to-pink-600/30 transition-all duration-300"
-            whileHover={{ y: -5 }}
-          >
-            <h3 className="text-lg font-semibold text-gray-100 mb-2">Developer First</h3>
-            <p className="text-gray-300 text-sm">Built for seamless integration</p>
-          </motion.div>
-        </motion.div>
+          <span className="text-blue-300 font-semibold">Meta data goes live soon.</span>{" "}
+          Sign up to stay in the loop and get priority access when we launch.
+        </motion.p>
       </motion.div>
 
       {/* Scroll Indicator */}
