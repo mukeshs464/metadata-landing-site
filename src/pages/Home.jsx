@@ -20,10 +20,11 @@ const Home = () => {
   return (
     <>
       <HomeContent />
-      <AboutUs />
+      
       <div className="px-6 mx-auto max-w-7xl">
         <FeatureSection />
       </div>
+      <AboutUs />
       <div className="px-6 mx-auto max-w-7xl">
         <Workflow />
         {/* <Team1 /> */}
