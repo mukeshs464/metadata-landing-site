@@ -20,6 +20,7 @@ import {
 } from "../constants";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import UnivSection from "../components/custom/univ";
+import { FloatingDock } from "../components/ui/floating-dock";
 
 
 const TeamDetails = () => {
@@ -171,6 +172,11 @@ const TeamDetails = () => {
                     </CardDescription>
                   )}
                 </CardHeader>
+                <FloatingDock
+                  items={item.links}
+                  desktopClassName="!ml-2"
+                  mobileClassName="!ml-4"
+                />
               </Card>
             ))
           ) : (

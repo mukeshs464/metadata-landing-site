@@ -14,7 +14,8 @@ import {
   PopoverContent,
 } from "./popover";
 import { Info } from "lucide-react";
-import { Card, CardDescription, CardHeader, CardTitle } from "./card";
+import { Card, CardHeader, CardTitle } from "./card";
+import { FloatingDock } from "./floating-dock";
 
 export const AnimatedTooltip = ({
   items,
@@ -26,6 +27,9 @@ export const AnimatedTooltip = ({
     photo: string;
     bio?: string;
     contact?: string;
+    links: {
+      title: string; icon: React.ReactNode; href: string
+    }[];
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -130,6 +134,11 @@ export const AnimatedTooltip = ({
               </div>
               <CardTitle className="text-lg text-gray-800">{item.name}</CardTitle>
             </CardHeader>
+            <FloatingDock
+              items={item.links}
+              desktopClassName="!ml-2"
+              mobileClassName="!ml-4"
+            />
           </Card>
         </div>
       ))}
