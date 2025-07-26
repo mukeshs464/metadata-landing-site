@@ -559,11 +559,11 @@ export const faculty_contributors = [
     id: 1,
     name: "Dr. Selvanayaki Kolandapalayam Shanmugam",
     photo: Selvanayaki_Kolandapalayam_Shanmugam,
-    quote: "Be Confident and Trust yourself",
+    quote: "Tough topics don’t break you. They build you.",
     link: "https://www.ashland.edu/faculty/selvanayaki-kolandapalayam-shanmugam-phd",
     links: [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/selvanayaki-kolandapalayam-shanmugam-155a2129/"},
     ]
   },
   {
@@ -574,40 +574,40 @@ export const faculty_contributors = [
     link: "https://drajibesin.com/",
     links: [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/abelajibesin?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaFP0wFAUQeiHSGcuMYD7sA%3D%3D"},
     ]
   },
   {
     id: 3,
     name: "Dr. Senthil Kumar T. ",
     photo: Senthil_Kumar_T,
-    quote: "Be Confident and Trust yourself",
+    quote: "It all comes back:especially the kindness.",
     link: "https://www.amrita.edu/faculty/t-senthilkumar/",
     links: [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/senthilkumar-thangavel-ba4784aa/"},
     ]
   },
   {
     id: 4,
     name: "Dr. G Naveen Sundar ",
     photo: null,
-    quote: "Be Confident and Trust yourself",
+    quote: "A little progress each day adds up to big results",
     link: "https://www.karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr%20Naveen.pdf",
     links: [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/dr-naveen-sundar-93b6b787/"},
     ]
   },
   {
     id:5,
     name: "Dr. D. Narmadha",
     photo: null,
-    quote: "Be Confident and Trust yourself",
+    quote: "Build a career, yes. But don’t forget to build a life",
     link: "https://karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr.%20Narmadha.pdf",
     links: [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/narmadhanaveen/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in"},
     ]
   }
 ];
