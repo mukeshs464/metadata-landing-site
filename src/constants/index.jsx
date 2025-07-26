@@ -1,12 +1,11 @@
-
-
-
 import { BotMessageSquare } from "lucide-react";
 import { BatteryCharging } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { AudioLines } from 'lucide-react';
 import { GlobeLock } from "lucide-react";
+import { Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -234,84 +233,318 @@ import Vikashini_S from "../assets/contributor_photo/Student/Vikashini_S.jpg";
 import Arun_Thomas from "../assets/contributor_photo/Student/Arun_Thomas.jpg";
 import Thirmalreddy_Mary_Shalini from "../assets/contributor_photo/Student/Thirmalreddy_Mary_Shalini.jpg";  
 export const student_contributors = [
-  {id: 1,name: "Ridwan Salahudeen",photo: Ridwan_Salahudeen,degree: null,},
-  {id: 2,name: "Benisemeni Dama Francis",photo: Benisemeni_Dama_Francis,degree: null,},
-  {id: 3,name: "John Monday",photo: John_Monday,degree: null,},
-  {id: 4,name: "Muktar Usman",photo: null,degree: null,},
-  {id: 5,name: "Rofhiwa Mudau",photo: Rofhiwa_Mudau,degree: null,},
-  {id: 6,name: "Tarcízio Ferrão",photo: Tarcízio_Ferrão,degree: null,},
-  {id: 7,name: "Roland T. Tweh",photo: Roland_T_Tweh,degree: null,},
-  {id: 8,name: "Otu Uchechi",photo: Otu_Uchechi,degree: "MSC",},
-  { id: 9, name: "Sri Kailaash Kumar", photo: null, degree: null },
-  { id: 10, name: "Harshni Sri", photo: null, degree: null },
-  { id: 11, name: "Ganeshkaran M", photo: null, degree: null },
-  { id: 12, name: "Hanish K R", photo: null, degree: null },
-  { id: 13, name: "Guhan K.B", photo: null, degree: null },
-  { id: 14, name: "Srividya M", photo: null, degree: null },
-  { id: 15, name: "Keshav S", photo: null, degree: null },
-  { id: 16, name: "Aakash P", photo: null, degree: null },
-  { id: 17, name: "Vanmathi V M", photo: null, degree: null },
-  { id: 18, name: "NISHANTH R", photo: null, degree: null },
-  { id: 19, name: "Pramothini S", photo: null, degree: null },
-  { id: 20, name: "Aadhithya Bharathi A", photo: null, degree: null },
-  { id: 21, name: "M.Chandana", photo: null, degree: null },
-  { id: 22, name: "A.Snigdha Siri Valli", photo: null, degree: null },
-  { id: 23, name: "T.Neha", photo: null, degree: null },
-  { id: 24, name: "Nethra Kanagaraj", photo: null, degree: null },
-  { id: 25, name: "Harish S", photo: null, degree: null },
-  { id: 26, name: "S Adwaitha", photo: null, degree: null },
-  { id: 27, name: "Golla Ram", photo: null, degree: null },
-  { id: 28, name: "Gokul Balajiram", photo: null, degree: null },
-  { id: 29, name: "Krishna GSVV", photo: Krishna_GSVV, degree: null },
-  { id: 30, name: "KISHORE S", photo: null, degree: null },
-  { id: 31, name: "Dhayanandh N", photo: null, degree: null },
-  { id: 32, name: "Thejas Monikuttan", photo: Thejas_Monikuttan, degree: null },
-  { id: 33, name: "Esther Alice Mathew", photo: Esther_Alice_Mathew, degree: null },
-  { id: 34, name: "Stanly Kurian", photo: Stanly_Kurian, degree: null },
-  { id: 35, name: "Junia Sam Dani", photo: Junia_Sam_Dani, degree: null },
-  { id: 36, name: "Aleena Saji", photo: Aleena_Saji, degree: null },
-  { id: 37, name: "Jenolin Esther S", photo: null, degree: null },
-  { id: 38, name: "I Lydia Princess", photo: I_Lydia_Princess, degree: null },
-  { id: 39, name: "Prajusha R", photo: Prajusha_R, degree: null },
-  { id: 40, name: "V Jaswanthini", photo: null, degree: null },
-  { id: 41, name: "Shebin Sam", photo: Shebin_Sam, degree: null },
-  { id: 42, name: "Shon Mathew Shalu", photo: null, degree: null },
-  { id: 43, name: "Steve Thomas Mulamoottil", photo: Steve_Thomas_Mulamoottil, degree: null },
-  { id: 44, name: "Krishnapriya S", photo: null, degree: null },
-  { id: 45, name: "Bandaru Pavana Sandhya", photo: Bandaru_Pavana_Sandhya, degree: null },
-  { id: 46, name: "Srinithi S", photo: Srinithi_S, degree: null },
-  { id: 47, name: "Benetta M Thomas", photo: Benetta_M_Thomas, degree: null },
-  { id: 48, name: "Sheron Xalxo", photo: null, degree: null },
-  { id: 49, name: "Aaron Ande", photo: null, degree: null },
-  { id: 50, name: "Vikashini S", photo: Vikashini_S, degree: null },
-  { id: 51, name: "Arun Thomas", photo: Arun_Thomas, degree: null },
-  { id: 52, name: "Thirmalreddy Mary Shalini", photo: Thirmalreddy_Mary_Shalini, degree: null },
-  { id: 53, name: "Gopu Rachel Rejoice Reddy", photo: null, degree: null },
-  { id: 54, name: "Jenulin Makros", photo: null, degree: null },
-  { id: 55, name: "Viswanthan S S", photo: null, degree: null },
-  { id: 56, name: "Giftlin Olivia T", photo: null, degree: null },
-  { id: 57, name: "Nisha K", photo: null, degree: null },
-  { id: 58, name: "Darshnee Sunderraj", photo: null, degree: null },
-  { id: 59, name: "S Abika Blessy", photo: null, degree: null },
-  { id: 60, name: "Beereddy Sreeja", photo: null, degree: null },
-  { id: 61, name: "Mokara Anjali", photo: null, degree: null },
-  { id: 62, name: "Yetukuri Gana Bala Meghana", photo: null, degree: null },
-  { id: 63, name: "Justina Sam", photo: null, degree: null },
-  { id: 64, name: "Golla Lakshmi Supriya Yadav", photo: null, degree: null },
-  { id: 65, name: "Kesireddygari Mounika", photo: null, degree: null },
-  { id: 66, name: "V Praisy", photo: null, degree: null },
-  { id: 67, name: "Allen Matthew T J", photo: null, degree: null },
-  { id: 68, name: "M Harish", photo: null, degree: null },
-  { id: 69, name: "Anbi Tibina K K", photo: null, degree: null },
-  { id: 70, name: "Angel Merrin John", photo: null, degree: null },
-  { id: 71, name: "R Akhila Jyothi", photo: null, degree: null },
-  { id: 72, name: "Bettina Ninan", photo: null, degree: null },
-  { id: 73, name: "Nancy Sharon S", photo: null, degree: null },
-  { id: 74, name: "Gayathri J", photo: null, degree: null },
-  { id: 75, name: "Stany Cyril R", photo: null, degree: null },
-  { id: 76, name: "Berbin MS", photo: null, degree: null },
-  { id: 77, name: "Sindhe Nigama Sree", photo: null, degree: null },
-  { id: 78, name: "Vishal A", photo: null, degree: null },
+  {id: 1,name: "Ridwan Salahudeen",photo: Ridwan_Salahudeen, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 2,name: "Benisemeni Dama Francis",photo: Benisemeni_Dama_Francis,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 3,name: "John Monday",photo: John_Monday,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 4,name: "Muktar Usman",photo: null,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 5,name: "Rofhiwa Mudau",photo: Rofhiwa_Mudau,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 6,name: "Tarcízio Ferrão",photo: Tarcízio_Ferrão,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 7,name: "Roland T. Tweh",photo: Roland_T_Tweh,degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  {id: 8,name: "Otu Uchechi",photo: Otu_Uchechi,degree: "MSC", links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]},
+  { id: 9, name: "Sri Kailaash Kumar", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 10, name: "Harshni Sri", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 11, name: "Ganeshkaran M", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 12, name: "Hanish K R", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 13, name: "Guhan K.B", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 14, name: "Srividya M", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 15, name: "Keshav S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 16, name: "Aakash P", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 17, name: "Vanmathi V M", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 18, name: "NISHANTH R", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 19, name: "Pramothini S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 20, name: "Aadhithya Bharathi A", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 21, name: "M.Chandana", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 22, name: "A.Snigdha Siri Valli", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 23, name: "T.Neha", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 24, name: "Nethra Kanagaraj", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 25, name: "Harish S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 26, name: "S Adwaitha", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 27, name: "Golla Ram", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 28, name: "Gokul Balajiram", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 29, name: "Krishna GSVV", photo: Krishna_GSVV, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 30, name: "KISHORE S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 31, name: "Dhayanandh N", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 32, name: "Thejas Monikuttan", photo: Thejas_Monikuttan, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 33, name: "Esther Alice Mathew", photo: Esther_Alice_Mathew, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 34, name: "Stanly Kurian", photo: Stanly_Kurian, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 35, name: "Junia Sam Dani", photo: Junia_Sam_Dani, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 36, name: "Aleena Saji", photo: Aleena_Saji, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 37, name: "Jenolin Esther S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 38, name: "I Lydia Princess", photo: I_Lydia_Princess, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 39, name: "Prajusha R", photo: Prajusha_R, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 40, name: "V Jaswanthini", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 41, name: "Shebin Sam", photo: Shebin_Sam, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 42, name: "Shon Mathew Shalu", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 43, name: "Steve Thomas Mulamoottil", photo: Steve_Thomas_Mulamoottil, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 44, name: "Krishnapriya S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 45, name: "Bandaru Pavana Sandhya", photo: Bandaru_Pavana_Sandhya, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 46, name: "Srinithi S", photo: Srinithi_S, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 47, name: "Benetta M Thomas", photo: Benetta_M_Thomas, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 48, name: "Sheron Xalxo", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 49, name: "Aaron Ande", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 50, name: "Vikashini S", photo: Vikashini_S, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 51, name: "Arun Thomas", photo: Arun_Thomas, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 52, name: "Thirmalreddy Mary Shalini", photo: Thirmalreddy_Mary_Shalini, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 53, name: "Gopu Rachel Rejoice Reddy", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 54, name: "Jenulin Makros", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 55, name: "Viswanthan S S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 56, name: "Giftlin Olivia T", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 57, name: "Nisha K", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 58, name: "Darshnee Sunderraj", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 59, name: "S Abika Blessy", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 60, name: "Beereddy Sreeja", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 61, name: "Mokara Anjali", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 62, name: "Yetukuri Gana Bala Meghana", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 63, name: "Justina Sam", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 64, name: "Golla Lakshmi Supriya Yadav", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 65, name: "Kesireddygari Mounika", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 66, name: "V Praisy", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 67, name: "Allen Matthew T J", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 68, name: "M Harish", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 69, name: "Anbi Tibina K K", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 70, name: "Angel Merrin John", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 71, name: "R Akhila Jyothi", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 72, name: "Bettina Ninan", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 73, name: "Nancy Sharon S", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 74, name: "Gayathri J", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 75, name: "Stany Cyril R", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 76, name: "Berbin MS", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 77, name: "Sindhe Nigama Sree", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
+  { id: 78, name: "Vishal A", photo: null, degree: null, links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ] },
 
 
 ];
@@ -328,6 +561,10 @@ export const faculty_contributors = [
     photo: Selvanayaki_Kolandapalayam_Shanmugam,
     quote: "Be Confident and Trust yourself",
     link: "https://www.ashland.edu/faculty/selvanayaki-kolandapalayam-shanmugam-phd",
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
   {
     id: 2,
@@ -335,6 +572,10 @@ export const faculty_contributors = [
     photo: Ajibesin_A_Abel,
     quote: "Be Confident and Trust yourself",
     link: "https://drajibesin.com/",
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
   {
     id: 3,
@@ -342,6 +583,10 @@ export const faculty_contributors = [
     photo: Senthil_Kumar_T,
     quote: "Be Confident and Trust yourself",
     link: "https://www.amrita.edu/faculty/t-senthilkumar/",
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
   {
     id: 4,
@@ -349,13 +594,21 @@ export const faculty_contributors = [
     photo: null,
     quote: "Be Confident and Trust yourself",
     link: "https://www.karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr%20Naveen.pdf",
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
   {
     id:5,
     name: "Dr. D. Narmadha",
     photo: null,
     quote: "Be Confident and Trust yourself",
-    link: "https://karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr.%20Narmadha.pdf"
+    link: "https://karunya.edu/sites/default/files/img/cst/faculty/Faculty-profile/Dr.%20Narmadha.pdf",
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   }
 ];
 
@@ -364,11 +617,19 @@ export const industrial_contributors = [
     id: 1,
     name: "Chetan",
     photo: Senthil_Kumar_T,
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
   {
     id: 2,
     name: "Rajesh J",
     photo: Senthil_Kumar_T,
+    links: [
+      {title: "GitHub", icon: <Github />, href: "https://github.com"},
+      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
+    ]
   },
 ];
 

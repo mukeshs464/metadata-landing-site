@@ -65,7 +65,7 @@ export const Team = () => {
 
   return (
     
-    <section  id="teams" className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="teams" className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 z-0">
         <motion.div
