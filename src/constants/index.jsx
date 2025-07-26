@@ -18,7 +18,7 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 export const navItems = [
   { label: "Home", href: "home" },
   { label: "Features", href: "features" },
-  { label: "AboutUs", href: "about-us" },
+  { label: "Our-Edge", href: "about-us" },
   { label: "Workflow", href: "workflow" },
   { label: "Teams", href: "teams" },
   { label: "Architecture", href: "architecture" },
@@ -160,7 +160,7 @@ export const features = [
     icon: <ShieldHalf />,
     text: "Scale Without Stress",
     description:
-      "Whether it’s 10 rows or 10 million, Meta handles your data with performance-first architecture.",
+      "Whether it’s 10 rows or 10 million, MetaData handles your data with performance-first architecture.",
   },
   {
     icon: <BatteryCharging />,
