@@ -14,9 +14,10 @@ import {
   CardTitle,
 } from "../components/ui/card"
 import {
-  student_contributors,
+  student_contributors_b,
   faculty_contributors,
   industrial_contributors,
+  student_contributors_a,
 } from "../constants";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import UnivSection from "../components/custom/univ";
@@ -28,7 +29,8 @@ const TeamDetails = () => {
   const navigate = useNavigate();
 
   const contributorsMap = {
-    "student-team": student_contributors,
+    "student-team-b": student_contributors_b,
+    "student-team-a": student_contributors_a,
     "faculty-team": faculty_contributors,
     "industrial-team": industrial_contributors,
   };
@@ -69,72 +71,15 @@ const TeamDetails = () => {
         <p className="text-gray-600 text-lg mt-2 italic">{formattedCategory === "Core" ? "“Not just code. We built blueprints, pipelines, systems — and solved problems that didn’t have StackOverflow answers.”" : formattedCategory === "Industry" ? "“Students need feedback loops — from people who’ve built, failed, and scaled real products.”" : formattedCategory === "Faculty" ? "“The best ideas don’t just emerge  they’re sparked, guided, and nurtured.”" : "“The quiet force behind MetaData’s evolution.”"}</p>
       </div>
 
-      {/* Contributors Grid */}
-      {/* <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {selectedContributors.length > 0 ? (
-          type != "Faculty" ? 
-            (selectedContributors.map((item, idx) => (
-              <div
-                key={idx}
-                className="relative min-h- bg-white/70 backdrop-blur-md border border-gray-200 rounded-xl shadow-md p-5 hover:shadow-xl transition-all group overflow-hidden"
-              >
-                <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
-                  <img
-                    src={item.photo || "/placeholder.jpg"}
-                    alt={item.name}
-                    className="object-cover h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
-
-                {category === "student-team" && item.degree && (
-                  <p className="text-sm text-gray-600">{item.degree}</p>
-                )}
-
-                <div className="absolute top-3 right-3">
-                  <Popover>
-                    <PopoverTrigger asChild>
-                      <button
-                        className="p-2 bg-white shadow-sm border border-gray-300 rounded-full hover:bg-blue-600 hover:text-blue-300 transition"
-                        aria-label="More Info"
-                      >
-                        <Info size={18} />
-                      </button>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-72 shadow-lg rounded-lg p-4 bg-white">
-                      <h4 className="font-semibold text-md mb-1">
-                        {item.name}
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-2">
-                        {item?.bio ||
-                          "No additional info available."}
-                      </p>
-                      <p className="text-sm text-gray-500 italic">
-                        Contact: {item?.contact || "N/A"}
-                      </p>
-                    </PopoverContent>
-                  </Popover>
-                </div>
-              </div>
-          ))) : (
-            <AnimatedTooltip items={selectedContributors} />
-          )
-        ) : (
-          <p className="text-center text-gray-600 col-span-full">
-            No contributors found.
-          </p>
-        )}
-      </div> */}
-
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-stretch">
         {selectedContributors.length > 0 ? (
           type !== "Faculty" ? (
             selectedContributors.map((item, idx) => (
+              console.log(item.photo),
               <Card
                 key={idx}
                 className="relative w-full h-full flex flex-col justify-between bg-white/70 backdrop-blur-md border border-gray-200 shadow-md hover:shadow-xl transition-all group overflow-hidden"
               >
-                {/* Popover Trigger as CardAction (top-right corner) */}
                 <div className="absolute top-3 right-3 z-10">
                   <Popover>
                     <PopoverTrigger asChild>
@@ -148,10 +93,7 @@ const TeamDetails = () => {
                     <PopoverContent className="w-72 shadow-lg rounded-lg p-4 bg-white">
                       <h4 className="font-semibold text-md mb-1">{item.name}</h4>
                       <p className="text-sm text-gray-600 mb-2">
-                        {item?.bio || "No additional info available."}
-                      </p>
-                      <p className="text-sm text-gray-500 italic">
-                        Contact: {item?.contact || "N/A"}
+                        {item?.desc || "No additional info available."}
                       </p>
                     </PopoverContent>
                   </Popover>
@@ -174,7 +116,6 @@ const TeamDetails = () => {
                 </CardHeader>
                 <FloatingDock
                   items={item.links}
-                  desktopClassName="!ml-2"
                   mobileClassName="!ml-4"
                 />
               </Card>

@@ -89,19 +89,10 @@ export const AnimatedTooltip = ({
               </motion.div>
             )}
           </AnimatePresence>
-          {/* <img
-            onMouseMove={handleMouseMove}
-            height={100}
-            width={100}
-            src={item.photo}
-            alt={item.name}
-            className="relative !m-0 h-14 w-14 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
-          /> */}
           <Card
             key={idx}
             className="relative w-full h-full flex flex-col justify-between bg-white/70 backdrop-blur-md border border-gray-200 shadow-md hover:shadow-xl transition-all group overflow-hidden"
           >
-            {/* Popover Trigger as CardAction (top-right corner) */}
             <div className="absolute top-3 right-3 z-10">
               <Popover>
                 <PopoverTrigger asChild>
@@ -116,9 +107,6 @@ export const AnimatedTooltip = ({
                   <h4 className="font-semibold text-md mb-1">{item.name}</h4>
                   <p className="text-sm text-gray-600 mb-2">
                     {item?.bio || "No additional info available."}
-                  </p>
-                  <p className="text-sm text-gray-500 italic">
-                    Contact: {item?.contact || "N/A"}
                   </p>
                 </PopoverContent>
               </Popover>
@@ -136,7 +124,6 @@ export const AnimatedTooltip = ({
             </CardHeader>
             <FloatingDock
               items={item.links}
-              desktopClassName="!ml-2"
               mobileClassName="!ml-4"
             />
           </Card>
