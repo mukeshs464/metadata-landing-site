@@ -11,6 +11,7 @@ import Workflow from "./Workflow";
 import Team1 from "./Team1";
 import Testimonials from "./Testimonials";
 import { Architecture } from "./Architecture";
+import Navbar from "../components/Navbar";
 
 const activeUsers = 1200;
 const totalProjects = 5600;
@@ -19,6 +20,7 @@ const modelsDeployed = 890;
 const Home = () => {
   return (
     <>
+      <Navbar/>
       <HomeContent />
       
       <div className="px-6 mx-auto max-w-7xl">

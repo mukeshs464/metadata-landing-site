@@ -17,15 +17,8 @@ import IndustryExpertDetails from "./pages/IndustryContributors";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* Navbar inside BrowserRouter */}
-      <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="feature" element={<FeatureSection />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="workflow" element={<Workflow />} />
-          <Route path="team" element={<Team />} />
           <Route path="/team-details/:category" element={<TeamDetails />} />
 
 

@@ -41,12 +41,6 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-4 items-center">
             <a
               href="#"
-              className="py-2 px-3 border rounded-md bg-white text-black hover:bg-black hover:text-white transition-colors duration-300"
-            >
-              Sign In
-            </a>
-            <a
-              href="#"
               className="bg-white text-black py-2 px-3 rounded-md hover:bg-black hover:text-white transition-colors duration-300"
             >
               Register
@@ -78,9 +72,6 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6 mt-4">
-              <a href="#" className="py-2 px-3 border rounded-md bg-white">
-                Sign In
-              </a>
               <a
                 href="#"
                 className="py-2 px-3 rounded-md bg-gradient-to-r from-indigo-500 to-indigo-800"

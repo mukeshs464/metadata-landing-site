@@ -112,12 +112,6 @@ export const testimonials = [
     text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
   },
   {
-    user: "ABC",
-    company: "Technologies",
-    image: user2,
-    text: "jaskdcslkdmfclskdmflkmskdmf sidjfioevsnmjodinmiofvs dfogviodiojgiojdojribgdjigtjbmidtjhj",
-  },
-  {
     user: "XYZ",
     company: "Company",
     image: user3,
@@ -547,11 +541,31 @@ export const student_contributors = [
       {title: "GitHub", icon: <Github />, href: "https://github.com"},
       {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
     ] },
-
-
 ];
 
-export const student_contributors_a = []
+export const student_contributors_a = [
+  {id: 1,name: "Vanmathi V M", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "placeholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+    {title: "GitHub", icon: <Github />, href: "vanmathivijay", comment: "modified"},
+    {title: "Linkedin", icon: <Linkedin />, href: "www.linkedin.com/in/vanmathivijay"}
+  ]},
+  {id: 2,name: " Aakash P", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "PLaceholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+    {title: "GitHub", icon: <Github />, href: "AakashPadmanaban", comment: "modified"},
+    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aakash-p-5173671b0/"},
+  ]},
+  {id: 3,name: "Hanish", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "placeholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+    {title: "GitHub", icon: <Github />, href: "Hanish2004", comment: "modified"},
+    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/hanish-k-r-8402b0226/"},
+  ]},
+  {id: 4,name: "Aaron Ande", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=17m__Nfp4wmhFwWoLuwPWuLnbFgfnY7jR", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+    {title: "GitHub", icon: <Github />, href: "https://github.com/AaronAnde", comment: "modified"},
+    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aaronande/"},
+  ]},
+  {id: 5,name: "Esther Alice Mathew", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1I6NBADqjPOGxUHyyPaPSOzyrir1NrHIS", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+    {title: "GitHub", icon: <Github />, href: "http://github.com/esther-alice", comment: "modified"},
+    {title: "Linkedin", icon: <Linkedin />, href: "http://www.linkedin.com/in/estheramathew"},
+    {title: "Mail", icon: <Mail />, href: "mailto:estheramathewjv@gmail.com"}
+  ]}
+]
 
 export const student_contributors_b = [
   {id: 1,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1WXijrCzOYjlaLTz3mT65meUjGVcjjuKr", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [

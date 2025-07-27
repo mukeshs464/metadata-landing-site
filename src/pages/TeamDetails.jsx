@@ -56,7 +56,7 @@ const TeamDetails = () => {
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center justify-center w-10 h-10 bg-white text-black rounded-full border border-black hover:bg-black hover:text-white transition duration-300 fixed top-24 left-4 z-50"
+        className="flex items-center justify-center w-10 h-10 bg-white text-black rounded-full border border-black hover:bg-black hover:text-white transition duration-300 fixed top-8 left-4 z-50"
       >
         <ArrowLeft size={20} />
       </button>
@@ -92,6 +92,9 @@ const TeamDetails = () => {
                     </PopoverTrigger>
                     <PopoverContent className="w-72 shadow-lg rounded-lg p-4 bg-white">
                       <h4 className="font-semibold text-md mb-1">{item.name}</h4>
+                      <p className="text-md text-gray-600 mb-2">
+                        {item?.role}
+                      </p>
                       <p className="text-sm text-gray-600 mb-2">
                         {item?.desc || "No additional info available."}
                       </p>
@@ -102,7 +105,7 @@ const TeamDetails = () => {
                 <CardHeader className="p-4">
                   <div className="relative overflow-hidden rounded-lg h-44 w-full mb-4">
                     <img
-                      src={item.photo || "/placeholder.jpg"}
+                      src={"/placeholder.jpg"}
                       alt={item.name}
                       className="object-cover h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
                     />
