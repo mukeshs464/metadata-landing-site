@@ -14,7 +14,7 @@ export const Team = () => {
       cover: "industrial team.jpg",
       lessons: "Industry Solutions",
       members: "Industry Experts",
-      profileImg: "/single-page-app/images/industrial-profile.png"
+      profileImg: "/placeholder.jpg"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export const Team = () => {
       cover: "faculty team.jpg",
       lessons: "Academic Excellence",
       members: "Faculty Members",
-      profileImg: "/single-page-app/images/faculty-profile.png"
+      profileImg: "/placeholder.jpg"
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export const Team = () => {
       cover: "students team.jpg",
       lessons: "Innovation Hub",
       members: "Student Leaders",
-      profileImg: "/single-page-app/images/student-profile.png"
+      profileImg: "/placeholder.jpg"
     }
   ];
 
@@ -39,18 +39,18 @@ export const Team = () => {
     {
       id: 1,
       title: "Team A",
-      cover: "/single-page-app/images/team-a-cover.jpg",
+      cover: "/placeholder.jpg",
       lessons: "Research & Development",
       members: "Team A Members",
-      profileImg: "/single-page-app/images/team-a-profile.png"
+      profileImg: "/placeholder.jpg"
     },
     {
       id: 2,
       title: "Team B",
-      cover: "/single-page-app/images/team-b-cover.jpg",
+      cover: "/placeholder.jpg",
       lessons: "Product Innovation",
       members: "Team B Members",
-      profileImg: "/single-page-app/images/team-b-profile.png"
+      profileImg: "/placeholder.jpg"
     }
   ];
 

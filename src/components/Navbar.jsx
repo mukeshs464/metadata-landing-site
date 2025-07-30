@@ -2,7 +2,6 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from "../assets/meta.jpg";
 import { navItems } from "../constants";
-import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -38,10 +37,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="hidden lg:flex justify-center space-x-4 items-center">
+          <div className="hidden lg:flex justify-center space-x-4 items-center rounded-3xl shadow-lg">
             <a
               href="#"
-              className="bg-white text-black py-2 px-3 rounded-md hover:bg-black hover:text-white transition-colors duration-300"
+              className="bg-white text-black py-2 px-3 rounded-3xl hover:bg-black hover:text-white transition-colors duration-300"
             >
               Register
             </a>

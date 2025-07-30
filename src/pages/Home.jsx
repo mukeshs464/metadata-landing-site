@@ -1,40 +1,41 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import CountUp from "react-countup";
-import { ChevronDown, Sparkles, Brain, Zap, Users, TrendingUp, Code, Database, Star } from "lucide-react";
+import {
+  ChevronDown,
+  Brain,
+  Zap,
+  Users,
+  TrendingUp,
+  Code,
+  Database,
+  Star,
+} from "lucide-react";
 
 // Import your existing components
 import FeatureSection from "./FeatureSection";
 import { AboutUs } from "./AboutUs";
 import { Team } from "./Team";
 import Workflow from "./Workflow";
-import Team1 from "./Team1";
+import Architecture from "./Architecture";
 import Testimonials from "./Testimonials";
-import { Architecture } from "./Architecture";
 import Navbar from "../components/Navbar";
-
-const activeUsers = 1200;
-const totalProjects = 5600;
-const modelsDeployed = 890;
 
 const Home = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <HomeContent />
-      
+
       <div className="px-6 mx-auto max-w-7xl">
         <FeatureSection />
       </div>
       <AboutUs />
       <div className="px-6 mx-auto max-w-7xl">
         <Workflow />
-        {/* <Team1 /> */}
       </div>
       <Team />
-      <Team1 />
+      <Architecture />
       <Testimonials />
-      {/* <Architecture /> */}
     </>
   );
 };
@@ -88,7 +89,7 @@ const HomeContent = () => {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-      
+
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -139,13 +140,19 @@ const HomeContent = () => {
       </motion.div>
       <motion.div
         className="absolute top-40 right-24 text-indigo-400/40"
-        animate={{ ...floatingAnimation, transition: { ...floatingAnimation.transition, delay: 1 } }}
+        animate={{
+          ...floatingAnimation,
+          transition: { ...floatingAnimation.transition, delay: 1 },
+        }}
       >
         <Code size={28} />
       </motion.div>
       <motion.div
         className="absolute bottom-40 left-32 text-purple-400/40"
-        animate={{ ...floatingAnimation, transition: { ...floatingAnimation.transition, delay: 2 } }}
+        animate={{
+          ...floatingAnimation,
+          transition: { ...floatingAnimation.transition, delay: 2 },
+        }}
       >
         <Database size={24} />
       </motion.div>
@@ -173,9 +180,13 @@ const HomeContent = () => {
           variants={itemVariants}
           className="text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl sm:max-w-4xl mx-auto mb-8 leading-relaxed text-center px-4"
         >
-          Meta data lets you upload datasets, train models, and run real predictions{" "}
-          <span className="text-blue-300 font-semibold">with or without code</span>. 
-          Build smarter workflows, test ideas fast, and turn raw data into meaningful insights.
+          Meta data lets you upload datasets, train models, and run real
+          predictions{" "}
+          <span className="text-blue-300 font-semibold">
+            with or without code
+          </span>
+          . Build smarter workflows, test ideas fast, and turn raw data into
+          meaningful insights.
         </motion.p>
 
         <motion.p
@@ -217,7 +228,7 @@ const HomeContent = () => {
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
               animate={{
-                x: ['-100%', '100%'],
+                x: ["-100%", "100%"],
               }}
               transition={{
                 duration: 1.5,
@@ -225,7 +236,10 @@ const HomeContent = () => {
                 repeatDelay: 2,
               }}
             />
-            <Zap size={22} className="relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+            <Zap
+              size={22}
+              className="relative z-10 group-hover:rotate-12 transition-transform duration-300"
+            />
             <span className="relative z-10">Join the Waitlist</span>
             <motion.div
               className="relative z-10 w-2 h-2 bg-white/40 rounded-full"
@@ -240,7 +254,7 @@ const HomeContent = () => {
               }}
             />
           </motion.button>
-          
+
           {/* Secondary CTA */}
           <motion.button
             className="group relative px-8 py-5 rounded-2xl bg-gray-800/60 backdrop-blur-xl border border-gray-600/50 text-gray-100 text-lg font-semibold hover:bg-gray-700/70 hover:border-gray-500/60 transition-all duration-400 flex items-center gap-3 min-w-[220px] justify-center shadow-xl hover:shadow-2xl"
@@ -248,10 +262,13 @@ const HomeContent = () => {
             whileTap={{ scale: 0.98 }}
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-gray-600/0 via-gray-400/10 to-gray-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-            <TrendingUp size={20} className="relative z-10 group-hover:text-blue-300 transition-colors duration-300" />
+            <TrendingUp
+              size={20}
+              className="relative z-10 group-hover:text-blue-300 transition-colors duration-300"
+            />
             <span className="relative z-10">Get Notified at Launch</span>
           </motion.button>
-          
+
           {/* Tertiary CTA */}
           <motion.button
             className="group relative px-6 py-5 rounded-2xl bg-gradient-to-r from-purple-600/20 via-pink-600/20 to-indigo-600/20 backdrop-blur-xl border border-purple-400/40 text-purple-200 text-lg font-semibold hover:from-purple-600/30 hover:via-pink-600/30 hover:to-indigo-600/30 hover:border-purple-400/60 transition-all duration-400 flex items-center gap-3 min-w-[200px] justify-center shadow-lg hover:shadow-purple-500/20"
@@ -259,12 +276,19 @@ const HomeContent = () => {
             whileTap={{ scale: 0.98 }}
           >
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400/0 via-purple-300/10 to-purple-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-            <Users size={20} className="relative z-10 group-hover:text-pink-300 transition-colors duration-300" />
+            <Users
+              size={20}
+              className="relative z-10 group-hover:text-pink-300 transition-colors duration-300"
+            />
             <span className="relative z-10">See How It Works</span>
             <motion.div
               className="relative z-10 text-purple-300 group-hover:text-pink-300 transition-colors duration-300"
               animate={{ x: [0, 4, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             >
               →
             </motion.div>
@@ -276,7 +300,9 @@ const HomeContent = () => {
           variants={itemVariants}
           className="text-sm sm:text-base text-gray-400 text-center px-4 mb-16 max-w-lg mx-auto leading-relaxed"
         >
-          <span className="text-blue-300 font-semibold">Meta data goes live soon.</span>{" "}
+          <span className="text-blue-300 font-semibold">
+            Meta data goes live soon.
+          </span>{" "}
           Sign up to stay in the loop and get priority access when we launch.
         </motion.p>
       </motion.div>
@@ -287,7 +313,10 @@ const HomeContent = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <ChevronDown className="text-gray-300 hover:text-gray-100 transition-colors cursor-pointer" size={24} />
+        <ChevronDown
+          className="text-gray-300 hover:text-gray-100 transition-colors cursor-pointer"
+          size={24}
+        />
       </motion.div>
     </section>
   );

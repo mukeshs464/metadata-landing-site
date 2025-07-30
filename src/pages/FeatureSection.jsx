@@ -1,7 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { features } from "../constants";
-import { CheckCircle2 } from "lucide-react";
 
 const FeatureSection = () => {
   // Card animation variants

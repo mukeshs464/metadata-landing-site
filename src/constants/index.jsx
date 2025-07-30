@@ -27,6 +27,7 @@ export const navItems = [
 
 import student_logo from "../assets/student_logo.jpg";
 import professional_cover from "../assets/professional_cover.jpg";
+
 export const teams = [
   {
     id: 1,
@@ -53,11 +54,6 @@ export const teams = [
     category: "students", // Added category
   },
 ];
-
-
-
-
-
 
 export const architectureOptions = [
   {
@@ -175,8 +171,6 @@ export const features = [
       "Identify which features drive performance. Use that to optimize data, reduce noise, and make smarter decisions.",
   },
 ];
-
-
 
 export const checklistItems = [
   {
@@ -875,7 +869,6 @@ export const student_contributors_b = [
 ]}
 ]
 
-
 import Selvanayaki_Kolandapalayam_Shanmugam from "../assets/contributor_photo/Faculty/Selvanayaki_Kolandapalayam_Shanmugam.webp";
 import Ajibesin_A_Abel from "../assets/contributor_photo/Faculty/Dr.Ajibesin_A_Abel.jpg";
 import Senthil_Kumar_T from "../assets/contributor_photo/Faculty/Senthil_Kumar_T.jpg";
@@ -959,9 +952,6 @@ export const industrial_contributors = [
   },
 ];
 
-
-
-
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },
   { href: "#", text: "Documentation" },
@@ -985,9 +975,6 @@ export const communityLinks = [
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
 ];
-
-
-
 
 // export const teams = [
 //   {
