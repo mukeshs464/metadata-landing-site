@@ -195,374 +195,78 @@ export const checklistItems = [
   },
 ];
 
-import Ridwan_Salahudeen from "../assets/contributor_photo/Student/Ridwan_Salahudeen.jpg";
-import Benisemeni_Dama_Francis from "../assets/contributor_photo/Student/Benisemeni_Dama_Francis.jpg";
-import John_Monday from "../assets/contributor_photo/Student/John_Monday.jpg";  
-// import Muktar_Usman from "../assets/contributor_photo/Student/Muktar_Usman.jpg";
-import Rofhiwa_Mudau from "../assets/contributor_photo/Student/Rofhiwa_Mudau.jpg";
-import Tarcízio_Ferrão from "../assets/contributor_photo/Student/Tarcizio_Ferrao.jpg";
-import Roland_T_Tweh from "../assets/contributor_photo/Student/Roland_T_Tweh.jpg";
-import Otu_Uchechi from "../assets/contributor_photo/Student/Otu_Uchechi.jpg";
-import Krishna_GSVV from "../assets/contributor_photo/Student/Krishna_GSVV.jpg";
-import Thejas_Monikuttan from "../assets/contributor_photo/Student/Thejas_Monikuttan.jpg";  
-import Esther_Alice_Mathew from "../assets/contributor_photo/Student/Esther_Alice_Mathew.jpg";
-import Stanly_Kurian from "../assets/contributor_photo/Student/Stanly_Kurian.jpeg";
-import Junia_Sam_Dani from "../assets/contributor_photo/Student/Junia_Sam_Dani.jpeg";
-// import Jenolin_Esther_S from "../assets/contributor_photo/Student/Jenolin_Esther_S.JPG";
-import Aleena_Saji from "../assets/contributor_photo/Student/Aleena_Saji.png";  
-import I_Lydia_Princess from "../assets/contributor_photo/Student/I_Lydia_Princess.jpg";
-import Prajusha_R from "../assets/contributor_photo/Student/Prajusha_R.jpg";
-import Shebin_Sam from "../assets/contributor_photo/Student/Shebin_Sam.jpg";
-import Steve_Thomas_Mulamoottil from "../assets/contributor_photo/Student/Steve_Thomas_Mulamoottil.jpg";  
-import Bandaru_Pavana_Sandhya from "../assets/contributor_photo/Student/Bandaru_Pavana_Sandhya.jpeg";
-import Srinithi_S from "../assets/contributor_photo/Student/Srinithi_S.jpg";  
-import Benetta_M_Thomas from "../assets/contributor_photo/Student/Benetta_M_Thomas.jpg";  
 
-import Vikashini_S from "../assets/contributor_photo/Student/Vikashini_S.jpg";  
-import Arun_Thomas from "../assets/contributor_photo/Student/Arun_Thomas.jpg";
-import Thirmalreddy_Mary_Shalini from "../assets/contributor_photo/Student/Thirmalreddy_Mary_Shalini.jpg";  
-export const student_contributors = [
-  {id: 1,name: "Ridwan Salahudeen", role:"", college: "", photo: Ridwan_Salahudeen, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-      {title: "Mail", icon: <BotMessageSquare />, href: "mailto:mailid"}
-    ]},
-  {id: 2,name: "Benisemeni Dama Francis",photo: Benisemeni_Dama_Francis,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 3,name: "John Monday",photo: John_Monday,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 4,name: "Muktar Usman",photo: null,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 5,name: "Rofhiwa Mudau",photo: Rofhiwa_Mudau,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 6,name: "Tarcízio Ferrão",photo: Tarcízio_Ferrão,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 7,name: "Roland T. Tweh",photo: Roland_T_Tweh,degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  {id: 8,name: "Otu Uchechi",photo: Otu_Uchechi,degree: "MSC", links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ]},
-  { id: 9, name: "Sri Kailaash Kumar", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 10, name: "Harshni Sri", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 11, name: "Ganeshkaran M", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 12, name: "Hanish K R", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 13, name: "Guhan K.B", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 14, name: "Srividya M", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 15, name: "Keshav S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 16, name: "Aakash P", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 17, name: "Vanmathi V M", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 18, name: "NISHANTH R", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 19, name: "Pramothini S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 20, name: "Aadhithya Bharathi A", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 21, name: "M.Chandana", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 22, name: "A.Snigdha Siri Valli", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 23, name: "T.Neha", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 24, name: "Nethra Kanagaraj", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 25, name: "Harish S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 26, name: "S Adwaitha", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 27, name: "Golla Ram", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 28, name: "Gokul Balajiram", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 29, name: "Krishna GSVV", photo: Krishna_GSVV, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 30, name: "KISHORE S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 31, name: "Dhayanandh N", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 32, name: "Thejas Monikuttan", photo: Thejas_Monikuttan, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 33, name: "Esther Alice Mathew", photo: Esther_Alice_Mathew, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 34, name: "Stanly Kurian", photo: Stanly_Kurian, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 35, name: "Junia Sam Dani", photo: Junia_Sam_Dani, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 36, name: "Aleena Saji", photo: Aleena_Saji, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 37, name: "Jenolin Esther S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 38, name: "I Lydia Princess", photo: I_Lydia_Princess, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 39, name: "Prajusha R", photo: Prajusha_R, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 40, name: "V Jaswanthini", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 41, name: "Shebin Sam", photo: Shebin_Sam, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 42, name: "Shon Mathew Shalu", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 43, name: "Steve Thomas Mulamoottil", photo: Steve_Thomas_Mulamoottil, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 44, name: "Krishnapriya S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 45, name: "Bandaru Pavana Sandhya", photo: Bandaru_Pavana_Sandhya, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 46, name: "Srinithi S", photo: Srinithi_S, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 47, name: "Benetta M Thomas", photo: Benetta_M_Thomas, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 48, name: "Sheron Xalxo", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 49, name: "Aaron Ande", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 50, name: "Vikashini S", photo: Vikashini_S, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 51, name: "Arun Thomas", photo: Arun_Thomas, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 52, name: "Thirmalreddy Mary Shalini", photo: Thirmalreddy_Mary_Shalini, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 53, name: "Gopu Rachel Rejoice Reddy", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 54, name: "Jenulin Makros", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 55, name: "Viswanthan S S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 56, name: "Giftlin Olivia T", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 57, name: "Nisha K", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 58, name: "Darshnee Sunderraj", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 59, name: "S Abika Blessy", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 60, name: "Beereddy Sreeja", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 61, name: "Mokara Anjali", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 62, name: "Yetukuri Gana Bala Meghana", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 63, name: "Justina Sam", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 64, name: "Golla Lakshmi Supriya Yadav", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 65, name: "Kesireddygari Mounika", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 66, name: "V Praisy", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 67, name: "Allen Matthew T J", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 68, name: "M Harish", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 69, name: "Anbi Tibina K K", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 70, name: "Angel Merrin John", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 71, name: "R Akhila Jyothi", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 72, name: "Bettina Ninan", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 73, name: "Nancy Sharon S", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 74, name: "Gayathri J", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 75, name: "Stany Cyril R", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 76, name: "Berbin MS", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 77, name: "Sindhe Nigama Sree", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-  { id: 78, name: "Vishal A", photo: null, degree: null, links: [
-      {title: "GitHub", icon: <Github />, href: "https://github.com"},
-      {title: "Linkedin", icon: <Linkedin />, href: "https://linkedin.com"},
-    ] },
-];
+//Student-a  
+import Pramothini from "../assets/contributor_photo/Student/Student-a/Pramothini.jpg";
+import Ridwan from "../assets/contributor_photo/Student/Student-a/Ridwan.jpg";
+import Rahul_Ravikumar from "../assets/contributor_photo/Student/Student-a/rahul.jpg";
+import Hanish from "../assets/contributor_photo/Student/Student-a/hanish.jpg";
+import Aakash from "../assets/contributor_photo/Student/Student-a/aakash.jpg";
+import Vaan from "../assets/contributor_photo/Student/Student-a/vaan.jpg";
 
 export const student_contributors_a = [
-  {id: 1,name: "Vanmathi V M", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "placeholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-    {title: "GitHub", icon: <Github />, href: "vanmathivijay", comment: "modified"},
-    {title: "Linkedin", icon: <Linkedin />, href: "www.linkedin.com/in/vanmathivijay"}
-  ]},
-  {id: 2,name: " Aakash P", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "PLaceholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-    {title: "GitHub", icon: <Github />, href: "AakashPadmanaban", comment: "modified"},
-    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aakash-p-5173671b0/"},
-  ]},
-  {id: 3,name: "Hanish", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "placeholder", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-    {title: "GitHub", icon: <Github />, href: "Hanish2004", comment: "modified"},
-    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/hanish-k-r-8402b0226/"},
-  ]},
-  {id: 4,name: "Aaron Ande", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=17m__Nfp4wmhFwWoLuwPWuLnbFgfnY7jR", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-    {title: "GitHub", icon: <Github />, href: "https://github.com/AaronAnde", comment: "modified"},
-    {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aaronande/"},
-  ]},
-  {id: 5,name: "Esther Alice Mathew", role:"Research and Development", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1I6NBADqjPOGxUHyyPaPSOzyrir1NrHIS", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-    {title: "GitHub", icon: <Github />, href: "http://github.com/esther-alice", comment: "modified"},
-    {title: "Linkedin", icon: <Linkedin />, href: "http://www.linkedin.com/in/estheramathew"},
-    {title: "Mail", icon: <Mail />, href: "mailto:estheramathewjv@gmail.com"}
-  ]}
+  {id: 1,name: "Ridwan Salahudeen", role:"Student SPOC for American University of Nigiera", college: "Saint Francis University, Hong Kong", photo:Ridwan, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "https://github.com/sridwan222", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/inkedin.com/in/ridwan-salahudeen-5b7b4b3b"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]},
+  {id: 2,name: "Vanmathi V M", role:"Principal Developer & Core Architect", college: "Amrita Vishwa Vidyapeetham", photo: Vaan , desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "www.linkedin.com/in/vanmathivijay"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]}, 
+  {id: 3,name: "Aakash P", role:"Core Architect and Devops Engineer", college: "Amrita Vishwa Vidyapeetham", photo: Aakash, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aakash-p-5173671b0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjDigun5sRJyAZZAV%2FToIww%3D%3D"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]},
+  {id: 4,name: "Hanish K R", role:"Core Architect and Module Designer", college: "Amrita Vishwa Vidyapeetham", photo: Hanish, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/hanish-k-r-8402b0226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtD3SllTQSfaoOquYNKU2Mw%3D%3D"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]},
+  {id: 5,name: "Rahul Ravikumar", role:"Principal Developer & Visualisation module lead", college: "Amrita Vishwa Vidyapeetham", photo: Rahul_Ravikumar, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/rahulravikumar03/"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]},
+  {id: 6,name: "Pramothini", role:"Statistics SPOCS", college: "Amrita Vishwa Vidyapeetham", photo:Pramothini, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/pramothini-s-a91018301/"},
+  {title: "Mail", icon: <Mail />, href: "mailto:contactsridwan@gmail.com"}
+]},
 ]
 
+// Student-b
+import Allen from "../assets/contributor_photo/Student/Allen_Matthew_T_J.jpg";
+import AaronAnde from "../assets/contributor_photo/Student/Aaron_Ande.jpg";
+import Anbi_Tibina_K_K from "../assets/contributor_photo/Student/Anbi_Tibina_K_K.jpg";
+import Arun_Thomas from "../assets/contributor_photo/Student/Arun_Thomas.jpg";
+import Bandaru_Pavana_Sandhya from "../assets/contributor_photo/Student/Bandaru_Pavana_Sandhya.jpeg";
+import Beereddy_Sreeja from "../assets/contributor_photo/Student/Beereddy_Sreeja.jpeg";
+import Benetta_M_Thomas from "../assets/contributor_photo/Student/Benetta_M_Thomas.jpg";
+import Benisemeni_Dama_Francis from "../assets/contributor_photo/Student/Benisemeni_Dama_Francis.jpg";
+import Berbin_MS from "../assets/contributor_photo/Student/Berbin_MS.png";
+import Bettina_Ninan from "../assets/contributor_photo/Student/Bettina_Ninan.jpg";
+import Darshnee_Sunderraj from "../assets/contributor_photo/Student/Darshnee_Sunderraj.jpg";
+// import Esther_Alice_Mathew from "../assets/contributor_photo/Student/Esther_Alice_Mathew.jpg";
+// import Giftlin_Olivia_T from "../assets/contributor_photo/Student/Giftlin_Olivia_T.jpeg";
+// import Golla_Lakshmi_Supriya_Yadav from "../assets/contributor_photo/Student/Golla_Lakshmi_Supriya_Yadav.jpeg";
+// import LLydia_Princess from "../assets/contributor_photo/Student/LLydia_Princess.jpg";
+// import Jenolin_Esther_S from "../assets/contributor_photo/Student/Jenolin_Esther_S.JPG";
+// import Jenulin_Makros from "../assets/contributor_photo/Student/Jenulin_Makros.jpg";
+import John_Monday from "../assets/contributor_photo/Student/John_Monday.jpg";
+import Junia_Sam_Dani from "../assets/contributor_photo/Student/Junia_Sam_Dani.jpeg";
+import Krishna_GSVV from "../assets/contributor_photo/Student/Krishna_GSVV.jpg";
+// import M_Harish from "../assets/contributor_photo/Student/M_Harish.JPEG";
+import Mokara_Anjali from "../assets/contributor_photo/Student/Mokara_Anjali.jpeg";
+import Nancy_Sharon_S from "../assets/contributor_photo/Student/Nancy_Sharon_S.jpeg";
+import Nisha_K from "../assets/contributor_photo/Student/Nisha_K.jpeg";
+import Otu_Uchechi from "../assets/contributor_photo/Student/Otu_Uchechi.jpg";
+import Prajusha_R from "../assets/contributor_photo/Student/Prajusha_R.jpg";
+
 export const student_contributors_b = [
-  {id: 1,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1WXijrCzOYjlaLTz3mT65meUjGVcjjuKr", desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+  {id: 1,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: Allen, desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/asta-maxx", comment: "modified"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/allenmatthewtj"},
   {title: "Mail", icon: <Mail />, href: "mailto:allenmatthew@karunya.edu.in"}
@@ -627,7 +331,7 @@ export const student_contributors_b = [
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/stanly-kurian-0249b4249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
   {title: "Mail", icon: <Mail />, href: "mailto:stanlykurian@karunya.edu.in"}
 ]},
-{id: 14,name: "Aaron Ande", role:"ML/DL MODELLING", college: "KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES", photo: "https://drive.google.com/open?id=17m__Nfp4wmhFwWoLuwPWuLnbFgfnY7jR", desc: "Worked on the Random Forest Model. Contributed towards feature selection and model tuning, data preprocessing, training, and evaluation of the model.", degree: null, links: [
+{id: 14,name: "Aaron Ande", role:"ML/DL MODELLING", college: "KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES", photo: AaronAnde, desc: "Worked on the Random Forest Model. Contributed towards feature selection and model tuning, data preprocessing, training, and evaluation of the model.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/AaronAnde"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aaronande"},
   {title: "Mail", icon: <Mail />, href: "mailto:aaronande@karunya.edu.in"}
@@ -697,12 +401,12 @@ export const student_contributors_b = [
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/angel-merrin-john-8b7984249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
   {title: "Mail", icon: <Mail />, href: "mailto:aj1518094@gmail.com"}
 ]},
-{id: 28,name: "ARUN THOMAS", role:"TESTING", college: "KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES", photo: "https://drive.google.com/open?id=1NiwEulg4_TQuYi5mEz-txCDMvUnNgaV-", desc: "As the tester for the project, I was responsible for designing and executing test cases to ensure the functionality, reliability, and accuracy of the software. I validated that the system correctly handled user inputs, selected the appropriate machine learning algorithms, and generated the expected outputs based on the provided datasets. I also identified bugs, collaborated with developers to troubleshoot issues, and verified performance across different algorithm and data combinations.", degree: null, links: [
+{id: 28,name: "ARUN THOMAS", role:"TESTING", college: "KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES", photo: Arun_Thomas, desc: "As the tester for the project, I was responsible for designing and executing test cases to ensure the functionality, reliability, and accuracy of the software. I validated that the system correctly handled user inputs, selected the appropriate machine learning algorithms, and generated the expected outputs based on the provided datasets. I also identified bugs, collaborated with developers to troubleshoot issues, and verified performance across different algorithm and data combinations.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/ARUNTHOMAS3"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/-arunthomas"},
   {title: "Mail", icon: <Mail />, href: "mailto:arunthomas22@karunya.edu.in"}
 ]},
-{id: 29,name: "Anbi Tibina K K", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences ", photo: "https://drive.google.com/open?id=1GlJmy8h9zDiIOltHmjIIGdsCCrr4qoXz", desc: "I trained an DISTILL-based language model and built a user-friendly solution that enables others to easily train their own models on custom datasets.", degree: null, links: [
+{id: 29,name: "Anbi Tibina K K", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences ", photo: Anbi_Tibina_K_K , desc: "I trained an DISTILL-based language model and built a user-friendly solution that enables others to easily train their own models on custom datasets.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/Anbi105", comment: "modified"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/anbitibinakk"},
   {title: "Mail", icon: <Mail />, href: "mailto:anbitibina3@gmail.com"}
@@ -752,11 +456,7 @@ export const student_contributors_b = [
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/aleena-saji"},
   {title: "Mail", icon: <Mail />, href: "mailto:aleenasaji@karunya.edu.in"}
 ]},
-{id: 39,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1qINf80CjJbanFzAC8w3Bh2It_kSMp5_Z", desc: "Fine-tuned ELECTRA models so they finally understand language – because transformers can’t just transform without knowing what they’re reading", degree: null, links: [
-  {title: "GitHub", icon: <Github />, href: "https://github.com/asta-maxx", comment: "modified"},
-  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/allenmatthewtj"},
-  {title: "Mail", icon: <Mail />, href: "mailto:allenmatthew@karunya.edu.in"}
-]},
+
 {id: 40,name: "V Jaswanthini ", role:"ML/DL MODELLING", college: "Karunya institute of technology and sciences ", photo: "https://drive.google.com/open?id=1EnEq0ElfGkxXjzxx6j-9yDJFlAlqSzNh", desc: "Built a Bayesian Network model to capture and analyze conditional dependencies between variables, supporting probabilistic inference and data-driven decision-making.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/V-Jaswanthini"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/jaswanthini-victor"},
@@ -797,7 +497,7 @@ export const student_contributors_b = [
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/srinithi-s005"},
   {title: "Mail", icon: <Mail />, href: "mailto:srinithis22@karunya.edu.in"}
 ]},
-{id: 48,name: "Bandaru Pavana Sandhya", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1pccjpvQXDBfxBz8HQiyIheJpQxv1gsDC", desc: "Designed and implemented a Multilayer Perceptron (MLP) neural network to perform classification on labeled datasets. The model was trained and evaluated to measure accuracy, demonstrating its effectiveness in supervised learning tasks.", degree: null, links: [
+{id: 48,name: "Bandaru Pavana Sandhya", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: Bandaru_Pavana_Sandhya, desc: "Designed and implemented a Multilayer Perceptron (MLP) neural network to perform classification on labeled datasets. The model was trained and evaluated to measure accuracy, demonstrating its effectiveness in supervised learning tasks.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/bandarupavana"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/bandaru-pavana-sandhya"},
   {title: "Mail", icon: <Mail />, href: "mailto:bandarupavana@karunya.edu.in"}
