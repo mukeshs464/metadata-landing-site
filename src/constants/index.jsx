@@ -199,7 +199,7 @@ export const checklistItems = [
 //Student-a  
 import Pramothini from "../assets/profile-pictures/user1.jpg"; // Temporary placeholder
 import Ridwan from "../assets/profile-pictures/user2.jpg";
-import Rahul_Ravikumar from "../assets/contributor_photo/Student/Student-a/rahul.jpg";
+import Rahul_Ravikumar from "../assets/profile-pictures/user3.jpg";
 import Hanish from "../assets/contributor_photo/Student/Student-a/hanish.jpg";
 import Aakash from "../assets/contributor_photo/Student/Student-a/aakash.jpg";
 import Vaan from "../assets/contributor_photo/Student/Student-a/vaan.jpg";
