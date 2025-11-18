@@ -200,9 +200,9 @@ export const checklistItems = [
 import Pramothini from "../assets/profile-pictures/user1.jpg"; // Temporary placeholder
 import Ridwan from "../assets/profile-pictures/user2.jpg";
 import Rahul_Ravikumar from "../assets/profile-pictures/user3.jpg";
-import Hanish from "../assets/contributor_photo/Student/Student-a/hanish.jpg";
-import Aakash from "../assets/contributor_photo/Student/Student-a/aakash.jpg";
-import Vaan from "../assets/contributor_photo/Student/Student-a/vaan.jpg";
+import Hanish from "../assets/profile-pictures/user4.jpg";
+import Aakash from "../assets/profile-pictures/user5.jpg";
+import Vaan from "../assets/profile-pictures/user6.jpg";
 
 export const student_contributors_a = [
   {id: 1,name: "Ridwan Salahudeen", role:"Student SPOC for American University of Nigiera", college: "Saint Francis University, Hong Kong", photo:Ridwan, desc: "Led the team in developing a user-friendly interface and applying unsupervised machine learning techniques—including clustering, association rule mining, and dimensionality reduction", degree: null, links: [
