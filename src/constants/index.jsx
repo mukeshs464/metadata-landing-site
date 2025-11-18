@@ -239,7 +239,7 @@ export const student_contributors_a = [
 
 // Student-b
 import Allen from "../assets/contributor_photo/Student/Allen_Matthew_T_J.jpg";
-import AaronAnde from "../assets/contributor_photo/Student/Aaron_Ande.jpg";
+import AaronAnde from "../assets/profile-pictures/user2.jpg";
 import Anbi_Tibina_K_K from "../assets/contributor_photo/Student/Anbi_Tibina_K_K.jpg";
 import Arun_Thomas from "../assets/contributor_photo/Student/Arun_Thomas.jpg";
 import Bandaru_Pavana_Sandhya from "../assets/contributor_photo/Student/Bandaru_Pavana_Sandhya.jpeg";
