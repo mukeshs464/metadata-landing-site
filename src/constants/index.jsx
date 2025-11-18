@@ -197,7 +197,7 @@ export const checklistItems = [
 
 
 //Student-a  
-import Pramothini from "../assets/contributor_photo/Student/Student-a/pramothini.jpg";
+import Pramothini from "../assets/contributor_photo/Student/Student-a/Pramothini.jpg";
 import Ridwan from "../assets/contributor_photo/Student/Student-a/Ridwan.jpg";
 import Rahul_Ravikumar from "../assets/contributor_photo/Student/Student-a/rahul.jpg";
 import Hanish from "../assets/contributor_photo/Student/Student-a/hanish.jpg";
@@ -266,12 +266,12 @@ import Otu_Uchechi from "../assets/contributor_photo/Student/Otu_Uchechi.jpg";
 import Prajusha_R from "../assets/contributor_photo/Student/Prajusha_R.jpg";
 
 export const student_contributors_b = [
-  {id: 1,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: Allen, desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
-  {title: "GitHub", icon: <Github />, href: "https://github.com/asta-maxx", comment: "modified"},
-  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/allenmatthewtj"},
-  {title: "Mail", icon: <Mail />, href: "mailto:allenmatthew@karunya.edu.in"}
+  {id: 1,name: "Mukesh S", role:"FRONTEND", college: "Amrita vishwa vidyapeetham chennai", photo: null, desc: "Worked on developing front end part in landing page.", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "https://github.com/mukeshs464", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/mukesh-suresh-5b0544370?utm_source=share_via&utm_content=profile&utm_medium=member_android"},
+  {title: "Mail", icon: <Mail />, href: "mailto:mukesheverwin21@gmail.com"}
 ]},
-{id: 2,name: "Nethra Kanagaraj", role:"FRONTEND, BACKEND, STATISTICS", college: "Amrita Vishwa Vidyapeetham", photo: "https://drive.google.com/open?id=11XqPvxz_LaRiT160haOg4Z1tGY0bvo_m", desc: "Built smart metadata insights using statistical analysis of datasets—focusing on normality, modality, and confidence intervals to drive better data understanding.", degree: null, links: [
+{id: 2,name: "Raam", role:"FRONTEND, BACKEND, STATISTICS", college: "Amrita Vishwa Vidyapeetham", photo: "null", desc: "Built smart metadata insights using statistical analysis of datasets—focusing on normality, modality, and confidence intervals to drive better data understanding.", degree: null, links: [
   {title: "GitHub", icon: <Github />, href: "https://github.com/NethraK15", comment: "modified"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/nethra-kanagaraj-902b84301"},
   {title: "Mail", icon: <Mail />, href: "mailto:nethu1508@gmail.com"}
@@ -562,10 +562,15 @@ export const student_contributors_b = [
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/stanly-kurian-0249b4249"},
   {title: "Mail", icon: <Mail />, href: "mailto:stanlykurian22@gmail.com"}
 ]},
-{id: 61,name: "Allen Matthew T J", role:"ML/DL MODELLING, Hypothesis testing", college: "Karunya Institute of Technology and Sciences", photo: "https://drive.google.com/open?id=1fADxJ9jSp8gKaBOWhgkVItWZujVdzfaP", desc: "Worked with the Deep Learning team to develop a complete training pipeline for a classification task using the Electra model. Built components for data preprocessing and automated model training, integrated within a Flask-based interface.", degree: null, links: [
-  {title: "GitHub", icon: <Github />, href: "https://github.com/asta-maxx"},
+{id: 61,name: "Allen Matthew T J", role:"ML/DL MODELLING", college: "Karunya Institute of Technology and Sciences", photo: Allen, desc: "Worked on developing and fine-tuning the ELECTRA deep learning model to improve performance on a range of natural language processing tasks.", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "https://github.com/asta-maxx", comment: "modified"},
   {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/allenmatthewtj"},
-  {title: "Mail", icon: <Mail />, href: "mailto:jebinjohn767@gmail.com"}
+  {title: "Mail", icon: <Mail />, href: "mailto:allenmatthew@karunya.edu.in"}
+]},
+{id: 62,name: "Nethra Kanagaraj", role:"FRONTEND, BACKEND, STATISTICS", college: "Amrita Vishwa Vidyapeetham", photo: "https://drive.google.com/open?id=11XqPvxz_LaRiT160haOg4Z1tGY0bvo_m", desc: "Built smart metadata insights using statistical analysis of datasets—focusing on normality, modality, and confidence intervals to drive better data understanding.", degree: null, links: [
+  {title: "GitHub", icon: <Github />, href: "https://github.com/NethraK15", comment: "modified"},
+  {title: "Linkedin", icon: <Linkedin />, href: "https://www.linkedin.com/in/nethra-kanagaraj-902b84301"},
+  {title: "Mail", icon: <Mail />, href: "mailto:nethu1508@gmail.com"}
 ]}
 ]
 
